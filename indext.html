@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munamii Cakery</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap links -->
+  <!-- bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- bootstrap links -->
+  <!-- fonts links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap">
+  <!-- fonts links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- icon list link-->
+</head>
+<body>
+  <div class="all-content">
+    <div id="navbar"></div>
+
+    <!-- home section -->
+    <section id="home">
+      <div class="content">
+        <h3>
+          Bite into <br>
+          Happiness
+        </h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero,
+          fugit <br>ipsum dolor sit amet consectetur.
+        </p>
+        <button id="btn">Shop Now</button>
+      </div>
+    </section>
+
+    <!-- home section -->
+
+    <section id="top-cards">
+      <div class="heading2">Top <span>Categories</span></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/12468.jpg" alt="">
+              
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/28235.jpg" alt="">
+              
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/cupcakes-2285209_640.jpg" alt="">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="product">
+      <div class="container">
+      <div class="heading4">Products</div>
+    </div>
+      <div class="container" id="container3">
+    
+        <div class="row">
+          <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/cake.png" alt="">
+              <div class="card-body">
+                <h3>Cake</h3>
+              <p>120SEK <strike>150SEK</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+    
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+              <img src="/images/cupcake.png" alt="">
+              <div class="card-body">
+                <h3>Cupcake</h3>
+              <p>250SEK <strike>350SEK</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+    
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/cake.png" alt="">
+              <div class="card-body">
+                <h3>Cake</h3>
+              <p>130SEK <strike>150SEK</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+    
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/cupcake.png" alt="">
+              <div class="card-body">
+                <h3>Cupcake</h3>
+              <p>120SEK <strike>150SEK</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+  </div>
+</body>
+</html>
